@@ -1,0 +1,62 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Current Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/math",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/math:${workspaceFolder}/math/modeling"
+            }
+        },
+        {
+            "name": "Prepare Data",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/math/prepare_data.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/math",
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },
+        {
+            "name": "Train A*-PO Model",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/math/train_math_apo.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/math",
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },
+        {
+            "name": "Evaluate Model",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/math/evaluate_apo.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/math",
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },
+        {
+            "name": "Demo Pipeline",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/math/demo_apo_pipeline.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/math",
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },
+        {
+            "name": "Project Status",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/math/project_report.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/math",
+            "python": "${workspaceFolder}/.venv/bin/python"
+        }
+    ]
+}
