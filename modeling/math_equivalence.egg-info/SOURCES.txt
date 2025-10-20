@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+modeling/math_equivalence.py
+modeling/math_equivalence.egg-info/PKG-INFO
+modeling/math_equivalence.egg-info/SOURCES.txt
+modeling/math_equivalence.egg-info/dependency_links.txt
+modeling/math_equivalence.egg-info/requires.txt
+modeling/math_equivalence.egg-info/top_level.txt

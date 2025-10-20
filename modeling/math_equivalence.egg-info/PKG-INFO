@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: math_equivalence
+Version: 1.0.0
+Summary: A utility for determining whether 2 answers for a problem in the MATH dataset are equivalent.
+Home-page: https://github.com/hendrycks/math
+Author: Dan Hendrycks
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Provides-Extra: full
+Requires-Dist: torch; extra == "full"
+Requires-Dist: transformers; extra == "full"
+Requires-Dist: numpy; extra == "full"
+Requires-Dist: tqdm; extra == "full"
+Requires-Dist: datasets; extra == "full"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# Measuring Mathematical Problem Solving With the MATH Dataset
+This is the repository for [Measuring Mathematical Problem Solving With the MATH Dataset](https://arxiv.org/pdf/2103.03874) by
+[Dan Hendrycks](https://danhendrycks.com/), [Collin Burns](http://collinpburns.com), [Saurav Kadavath](http://www.sauravkadavath.com), [Akul Arora](https://github.com/akulaarora), [Steven Basart](https://stevenbas.art), [Eric Tang](https://www.linkedin.com/in/eric-tang-185350145/), [Dawn Song](https://people.eecs.berkeley.edu/~dawnsong/), and [Jacob Steinhardt](https://www.stat.berkeley.edu/~jsteinhardt/).
+
+This repository contains dataset loaders and evaluation code.
+
+Download the [**MATH dataset here**](https://huggingface.co/datasets/qwedsacf/competition_math).
+
+Download the [**AMPS pretraining dataset here**](https://drive.google.com/file/d/1hQsua3TkpEmcJD_UWQx8dmNdEZPyxw23/view?usp=sharing).
+
+<img align="center" src="dataset_comparison.png" width="750">
+
+## Citation
+
+If you find this useful in your research, please consider citing
+
+    @article{hendrycksmath2021,
+      title={Measuring Mathematical Problem Solving With the MATH Dataset},
+      author={Dan Hendrycks and Collin Burns and Saurav Kadavath and Akul Arora and Steven Basart and Eric Tang and Dawn Song and Jacob Steinhardt},
+      journal={NeurIPS},
+      year={2021}
+    }

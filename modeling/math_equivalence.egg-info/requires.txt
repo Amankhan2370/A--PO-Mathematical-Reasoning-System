@@ -1,0 +1,11 @@
+
+[dev]
+pytest
+pytest-cov
+
+[full]
+torch
+transformers
+numpy
+tqdm
+datasets
